@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1705756997288,
+      "tag": "0000_cultured_ulik",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1705845026492,
+      "tag": "0001_remarkable_silhouette",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1705847146670,
+      "tag": "0002_light_magdalene",
+      "breakpoints": true
+    }
+  ]
+}
