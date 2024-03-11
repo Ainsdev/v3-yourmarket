@@ -75,7 +75,7 @@ export function AddProductForm({ storeId }: AddProductFormProps) {
         await checkProduct({
           name: data.name,
         })
-
+        
         if (isArrayOfFile(data.images)) {
           toast.promise(
             startUpload(data.images)
@@ -222,23 +222,23 @@ export function AddProductForm({ storeId }: AddProductFormProps) {
           />
         </div>
         <div className="flex flex-col items-start gap-6 sm:flex-row">
-          <FormField
-            control={form.control}
-            name="price"
-            render={({ field }) => (
-              <FormItem className="w-full">
-                <FormLabel>Price</FormLabel>
-                <FormControl>
-                  <Input
-                    placeholder="Type product price here."
-                    value={field.value}
-                    onChange={field.onChange}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+            <FormField
+              control={form.control}
+              name="price"
+              render={({ field }) => (
+                <FormItem className="w-full">
+                  <FormLabel>Price</FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Type product price here."
+                      value={field.value}
+                      onChange={field.onChange}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
           <FormField
             control={form.control}
             name="inventory"
